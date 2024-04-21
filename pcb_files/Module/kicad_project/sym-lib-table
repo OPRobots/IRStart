@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "IRStart_PCB-rescue")(type "KiCad")(uri "${KIPRJMOD}/IRStart_PCB-rescue.kicad_sym")(options "")(descr ""))
+)
