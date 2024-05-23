@@ -1,0 +1,8 @@
+﻿Designator,Mid X,Mid Y,Rotation,Layer
+C1,136.86,-87.58,270.0,top
+D1,142.37,-87.69,0.0,top
+PROGRAM1,140.67,-87.85,180.0,bottom
+R1,139.0075,-87.67,180.0,top
+SUPPLY/OUTPUT1,135.14,-82.58,0.0,top
+U1,140.21,-83.84,0.0,top
+U2,142.85,-79.94,180.0,top

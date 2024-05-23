@@ -1,0 +1,8 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,0402,1,C,
+D1,0805,1,LED,
+PROGRAM1,Program_pads,1,Conn_01x06_Socket,
+R1,0805,1,1K,
+SUPPLY/OUTPUT1,PinSocket_1x03_P2.54mm_Vertical,1,Conn_01x03_Socket,
+U1,SOP8,1,ATtiny13A-S,
+U2,Vishay_MOLD-3Pin,1,TSOP45xx,

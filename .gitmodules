@@ -1,3 +1,6 @@
 [submodule "pcb_files/Remote/custom_libraries"]
-	path = pcb_files/Remote/custom_libraries
+	path = pcb_files/Remote/kicad_project/custom_libraries
+	url = https://github.com/OPRobots/KiCADLibraries.git
+[submodule "pcb_files/Module/kicad_project/custom_libraries"]
+	path = pcb_files/Module/kicad_project/custom_libraries
 	url = https://github.com/OPRobots/KiCADLibraries.git

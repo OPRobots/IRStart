@@ -34,8 +34,6 @@
       3,
       4,
       5,
-      6,
-      7,
       8,
       9,
       10,
@@ -66,11 +64,11 @@
       39,
       40
     ],
-    "visible_layers": "0003fff_80000001",
+    "visible_layers": "800ffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "IRStart_PCB.kicad_prl",
+    "filename": "IRStart - Module.kicad_prl",
     "version": 3
   },
   "project": {
