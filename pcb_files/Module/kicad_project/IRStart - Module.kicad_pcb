@@ -215,8 +215,13 @@
       (net 2 "GND") (pinfunction "GND") (pintype "power_in") (tstamp f88865f4-aa1b-460e-a673-af2f95cade96))
     (pad "3" thru_hole circle (at 5.08 0 180) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 1 "/3.3V{slash}5V") (pinfunction "Vs") (pintype "power_in") (tstamp 1691310f-afd0-4c1a-a8da-cf2d63af3270))
-    (model "${KICAD6_3DMODEL_DIR}/OptoDevice.3dshapes/Vishay_MOLD-3Pin.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/OptoDevice.3dshapes/Vishay_MOLD-3Pin.wrl" hide
       (offset (xyz 0 0 -2))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/TSOP4838.step"
+      (offset (xyz 0 -0.05 -0.75))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
