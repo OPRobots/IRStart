@@ -361,6 +361,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/Push_btn_assy.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" (layer "F.Cu")
@@ -483,6 +488,11 @@
     (pad "4" smd rect (at 1.05 -0.55 165) (size 1.2 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 26 "Net-(NEO2-DOUT)") (pinfunction "DIN") (pintype "input") (tstamp 055d16d1-0132-4673-bb18-1b4b05c64329))
     (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/LED_WS2812_2020.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1049,6 +1059,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/Push_btn_assy.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (layer "F.Cu")
@@ -1414,6 +1429,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/5mmLED.STEP"
+      (offset (xyz 0 2 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (layer "F.Cu")
@@ -1701,6 +1721,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SSOP-8_3.9x5.05mm_P1.27mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "custom_footprints:Leds_IR_Remote" (layer "F.Cu")
@@ -1741,6 +1766,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/5mmLED.STEP"
+      (offset (xyz 0 1.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 0))
     )
   )
 
@@ -2246,6 +2276,11 @@
     (pad "4" smd rect (at 1.05 -0.55 195) (size 1.2 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 6 "/RGBs") (pinfunction "DIN") (pintype "input") (tstamp a02d901d-4ded-49c1-8542-f63c9f45d27f))
     (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B-2020_PLCC4_2.0x2.0mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/LED_WS2812_2020.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3115,6 +3150,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/LED_WS2812_2020.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "kibuzzard-6637BD08" (layer "F.Cu")
@@ -3399,11 +3439,11 @@
     (property "Sheetname" "")
     (path "/63447f25-7d31-4fa0-8822-0a8a87b1057b")
     (attr smd)
-    (fp_text reference "LED2" (at 0 -2 -15) (layer "F.SilkS") hide
+    (fp_text reference "LED2" (at 0 -2 165) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e653f965-1f24-4d7b-84b9-edd75a7463e7)
     )
-    (fp_text value "~" (at 0 2 -15) (layer "F.Fab") hide
+    (fp_text value "~" (at 0 2 165) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a90a02d4-c470-427c-982d-0f61ff93d3c6)
     )
@@ -3427,6 +3467,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/5mmLED.STEP"
+      (offset (xyz 0 1.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
     )
   )
 
@@ -3993,6 +4038,11 @@
     (pad "2" smd rect (at 3.975 2.25 15) (size 1.55 1.3) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 3 "+3.3V") (pinfunction "2") (pintype "passive") (tstamp cc50aec5-604d-4ac3-a0a8-f62af1d7b299))
     (model "${KICAD6_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_PUSH_6mm_H9.5mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/custom_libraries/custom_footprints/3d_models/Push_btn_assy.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
