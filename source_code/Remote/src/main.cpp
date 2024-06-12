@@ -18,14 +18,14 @@ void setup() {
   }
   init_ir(protocol);
   while (get_btn_ready() || get_btn_start() || get_btn_stop()) {
-    blink_led(500);
+   blink_led(500);
   }
 }
 
 void loop() {
   // debug_all();
   while (get_btn_ready()) {
-    send_start(protocol);
+    send_ready(protocol);
   }
   while (get_btn_start()) {
     send_start(protocol);
@@ -33,7 +33,7 @@ void loop() {
   while (get_btn_stop()) {
     send_stop(protocol);
   }
-  // set_led(false);
-  // blink_led(500);
-  delay(100);
+  set_led(false);
+  blink_led(500);
+  // delay(100);
 }

@@ -8,8 +8,8 @@
 #define ADDR_PROG 0x0B
 
 #define CMD_READY 0x0
-#define CMD_START 0x1
-#define CMD_STOP 0x2
+#define CMD_START 0x2
+#define CMD_STOP 0x1
 
 static bool last_toggle_bit = false;
 
@@ -81,7 +81,7 @@ void rc5_send_prog() {
   unsigned char id = get_dip_switch();
   set_led(true);
   if (id == 0) {
-    send_packet(IR_PROG_PWM, ADDR, CMD_READY);
+    send_packet(IR_PROG_PWM, ADDR_PROG, 0x1);
   } else {
     send_packet(IR_PROG_PWM, ADDR_PROG, id << 1);
   }
