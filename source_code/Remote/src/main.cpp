@@ -18,8 +18,11 @@ void setup() {
   }
   init_ir(protocol);
   while (get_btn_ready() || get_btn_start() || get_btn_stop()) {
-   blink_led(500);
+    blink_led(500);
   }
+  set_rgb(0, 50, 0, 0);
+  set_rgb(1, 0, 50, 0);
+  set_rgb(2, 0, 0, 50);
 }
 
 void loop() {

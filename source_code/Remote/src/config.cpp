@@ -7,7 +7,6 @@ void init_components() {
   digitalWrite(LED, HIGH);
 
   pinMode(NEOPIXEL, OUTPUT);
-  digitalWrite(NEOPIXEL, LOW);
 
   pinMode(IR_CMD, OUTPUT);
   digitalWrite(IR_CMD, LOW);

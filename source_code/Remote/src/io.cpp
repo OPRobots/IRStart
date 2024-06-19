@@ -1,7 +1,14 @@
 #include <io.h>
 
+static Adafruit_NeoPixel pixels(3, NEOPIXEL, NEO_GRB + NEO_KHZ800);
+
 static bool led_state = false;
 static long last_blink = 0;
+
+void set_rgb(int led, int r, int g, int b) {
+  pixels.setPixelColor(led, pixels.Color(r, g, b));
+  pixels.show();
+}
 
 void set_led(bool state) {
   digitalWrite(LED, !state);
