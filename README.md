@@ -7,14 +7,13 @@ Mando y modulo para el arranque de nuestros robots usando el protocolo RC05 esta
 - Moudulo IR TSOP4838
 - Led Azul smd 0804
 - 1 Resistencias 220 ohm  smd 0804
-- 1 Resistencia 47k smd 0804
 - 1 Condesador 104 smd 0402
 ## Hardware mando
 - ESP32 C3 super mini
 - 3 leds IR
-- 2 switch x2 smd
+- 2 switch x2 smd para configuracion de robot
 - 1 interruptor de encendido
-- 2 mosfets para alta y baja intensidad de los leds
+- 2 mosfets para Start/Stop (alta intensidad) y Ready(Baja intensidad)
 - 1 modulo de carga de bateria
 - 1 bateria Lipo 1s 500mah
 
