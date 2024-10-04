@@ -21,5 +21,5 @@ Mando y modulo para el arranque de nuestros robots usando el protocolo RC05 esta
 - Programado con Arduino IDE
 - Disponible programa para modulo y mando
 
-![IRStart - Encendido](images/5944921237102902480.jpg)
-![IRStart - Encendido](images/5944921237102902425.jpg)
+![IRStart - Encendido](images/Mando_OPR_IR_START.jpg)
+![IRStart - Encendido](images/Modulo_OPR_IR_START.jpg)
