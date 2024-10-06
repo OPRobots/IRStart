@@ -6,10 +6,14 @@
 
 #define ADDR 0x07
 #define ADDR_PROG 0x0B
+#define ADDR_MENU 0x00
 
 #define CMD_READY 0x0
 #define CMD_START 0x2
 #define CMD_STOP 0x1
+#define CMD_MENU_MODE 0b1010
+#define CMD_MENU_UP 0b1011
+#define CMD_MENU_DOWN 0b1100
 
 static bool last_toggle_bit = false;
 
@@ -111,4 +115,25 @@ void rc5_send_stop() {
   }
   set_led(false);
   delay(30);
+}
+
+void rc5_send_menu_mode() {
+  set_led(true);
+  send_packet(IR_CMD_PWM, ADDR_MENU, CMD_MENU_MODE);
+  set_led(false);
+  delay(500);
+}
+
+void rc5_send_menu_up() {
+  set_led(true);
+  send_packet(IR_CMD_PWM, ADDR_MENU, CMD_MENU_UP);
+  set_led(false);
+  delay(500);
+}
+
+void rc5_send_menu_down() {
+  set_led(true);
+  send_packet(IR_CMD_PWM, ADDR_MENU, CMD_MENU_DOWN);
+  set_led(false);
+  delay(500);
 }

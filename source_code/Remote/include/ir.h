@@ -19,4 +19,10 @@ void send_start(PROTOCOL protocol);
 
 void send_stop(PROTOCOL protocol);
 
+void send_menu_mode(PROTOCOL protocol);
+
+void send_menu_up(PROTOCOL protocol);
+
+void send_menu_down(PROTOCOL protocol);
+
 #endif

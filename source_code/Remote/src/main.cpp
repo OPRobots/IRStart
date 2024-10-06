@@ -28,15 +28,24 @@ void setup() {
 void loop() {
   // debug_all();
   while (get_btn_ready()) {
-    send_ready(protocol);
+    if (digitalRead(DIP_SW_3)) {
+      send_menu_mode(protocol);
+    } else {
+      send_ready(protocol);
+    }
   }
   while (get_btn_start()) {
-    send_start(protocol);
+    if (digitalRead(DIP_SW_3)) {
+      send_menu_up(protocol);
+    } else {
+      send_start(protocol);
+    }
   }
   while (get_btn_stop()) {
-    send_stop(protocol);
+    if (digitalRead(DIP_SW_3)) {
+      send_menu_down(protocol);
+    } else {
+      send_stop(protocol);
+    }
   }
-  set_led(false);
-  blink_led(500);
-  // delay(100);
 }

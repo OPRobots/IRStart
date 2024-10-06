@@ -67,3 +67,36 @@ void send_stop(PROTOCOL protocol) {
       break;
   }
 }
+
+void send_menu_mode(PROTOCOL protocol) {
+  switch (protocol) {
+    case RC5:
+      rc5_send_menu_mode();
+      break;
+    default:
+      error_led();
+      break;
+  }
+}
+
+void send_menu_up(PROTOCOL protocol) {
+  switch (protocol) {
+    case RC5:
+      rc5_send_menu_up();
+      break;
+    default:
+      error_led();
+      break;
+  }
+}
+
+void send_menu_down(PROTOCOL protocol) {
+  switch (protocol) {
+    case RC5:
+      rc5_send_menu_down();
+      break;
+    default:
+      error_led();
+      break;
+  }
+}
