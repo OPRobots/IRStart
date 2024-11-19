@@ -4,7 +4,7 @@ Mando y modulo para el arranque de nuestros robots usando el protocolo RC05 esta
 ![IRStart](images/6034850580901511935.jpg "Diseño modulo")
 ## Hardware modulo
 - ATTiny13 SMD SOIC-8
-- Moudulo IR TSOP4838
+- Receptor IR TSOP4838
 - Led Azul smd 0804
 - 1 Resistencias 220 ohm  smd 0804
 - 1 Condesador 104 smd 0402
