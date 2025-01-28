@@ -2,14 +2,18 @@
 
 #define PWM_FREQ 36000
 #define PWM_RES 10
-#define PWM_DUTY 1024 * 1 / 3
+#define PWM_DUTY 1024 * 1 / 5
 
 #define ADDR 0x07
 #define ADDR_PROG 0x0B
-
 #define CMD_READY 0x0
 #define CMD_START 0x2
 #define CMD_STOP 0x1
+
+#define ADDR_IRMENU 0x1B // 27!
+#define CMD_IRMENU_UP 0x0D
+#define CMD_IRMENU_DOWN 0x0E
+#define CMD_IRMENU_MODE 0x0C
 
 static bool last_toggle_bit = false;
 
@@ -109,6 +113,27 @@ void rc5_send_stop() {
   } else {
     send_packet(IR_CMD_PWM, ADDR, (id << 1) & 0b11111110);
   }
+  set_led(false);
+  delay(30);
+}
+
+void rc5_send_menu_mode() {
+  set_led(true);
+  send_packet(IR_CMD_PWM, ADDR_IRMENU, CMD_IRMENU_MODE);
+  set_led(false);
+  delay(30);
+}
+
+void rc5_send_menu_up() {
+  set_led(true);
+  send_packet(IR_CMD_PWM, ADDR_IRMENU, CMD_IRMENU_UP);
+  set_led(false);
+  delay(30);
+}
+
+void rc5_send_menu_down() {
+  set_led(true);
+  send_packet(IR_CMD_PWM, ADDR_IRMENU, CMD_IRMENU_DOWN);
   set_led(false);
   delay(30);
 }

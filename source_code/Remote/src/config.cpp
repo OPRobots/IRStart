@@ -17,6 +17,7 @@ void init_components() {
   pinMode(BTN_START, INPUT);
   pinMode(BTN_STOP, INPUT);
   pinMode(BTN_READY, INPUT);
+  pinMode(BTN_MODE, INPUT_PULLDOWN);
 
   pinMode(DIP_SW_0, INPUT);
   pinMode(DIP_SW_1, INPUT);

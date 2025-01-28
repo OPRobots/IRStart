@@ -54,6 +54,13 @@ bool get_btn_ready() {
   return state1 && state2;
 }
 
+bool get_btn_mode() {
+  bool state1 = digitalRead(BTN_MODE);
+  delay(10);
+  bool state2 = digitalRead(BTN_MODE);
+  return state1 && state2;
+}
+
 unsigned char get_dip_switch() {
   unsigned char dip = 0;
   int DIP[4] = {DIP_SW_0, DIP_SW_1, DIP_SW_2, DIP_SW_3};

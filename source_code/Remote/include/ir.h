@@ -7,9 +7,21 @@
 #include <rc5.h>
 #include <sirc.h>
 
-enum PROTOCOL { RC5,
-                NEC,
-                SIRC };
+enum PROTOCOL {
+  RC5,
+  NEC,
+  SIRC,
+};
+
+#define NUM_MODES 2
+enum MODE {
+  IRSTART = 0,
+  IRMENU = 1,
+};
+
+void set_mode(enum MODE new_mode);
+
+enum MODE get_mode(void);
 
 void init_ir(PROTOCOL protocol);
 

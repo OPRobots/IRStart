@@ -36,7 +36,29 @@ void loop() {
   while (get_btn_stop()) {
     send_stop(protocol);
   }
-  set_led(false);
-  blink_led(500);
-  // delay(100);
+
+
+  if (get_btn_mode()) {
+    while (get_btn_mode()) {
+    }
+    set_mode((MODE)((get_mode() + 1) % NUM_MODES));
+  }
+
+  switch (get_mode()) {
+    case IRSTART:
+      set_rgb(0, 0, 50, 0);
+      set_rgb(1, 50, 0, 0);
+      set_rgb(2, 50, 0, 50);
+      break;
+    case IRMENU:
+      set_rgb(0, 0, 0, 0);
+      set_rgb(1, 0, 0, 0);
+      set_rgb(2, 0, 0, 50);
+      break;
+    default:
+      set_rgb(0, 50, 0, 0);
+      set_rgb(1, 50, 0, 0);
+      set_rgb(2, 50, 0, 0);
+      break;
+  }
 }
