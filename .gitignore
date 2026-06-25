@@ -6,3 +6,5 @@
 desktop.ini
 *.skb
 *.code-workspace
+.claude/
+site/
