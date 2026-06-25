@@ -25,10 +25,10 @@ static void rc5_manage_command(uint16_t message) {
   uint8_t command = (message & COMMAND_MASK) >> COMMAND_SHIFT;
   switch (address) {
     case ADDRESS_PROG:
-      rc5_stored_data[0] = command;
-      rc5_stored_data[1] = command + 1;
-      EEPROM.write(EEPROM_ADDR_RC5_START, rc5_stored_data[DATA_START]);
+      rc5_stored_data[DATA_STOP] = command;
+      rc5_stored_data[DATA_START] = command + 1;
       EEPROM.write(EEPROM_ADDR_RC5_STOP, rc5_stored_data[DATA_STOP]);
+      EEPROM.write(EEPROM_ADDR_RC5_START, rc5_stored_data[DATA_START]);
       module_feedback();
       break;
     case ADDRESS_COMP:

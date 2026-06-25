@@ -27,16 +27,33 @@ void setup() {
 
 void loop() {
   // debug_all();
-  while (get_btn_ready()) {
-    send_ready(protocol);
+  if (get_btn_ready()) {
+    do {
+      send_ready(protocol);
+    } while (get_btn_ready() && get_mode() == IRSTART);
+    while (get_btn_ready()) {
+    }
   }
-  while (get_btn_start()) {
-    send_start(protocol);
+
+  if (get_btn_start()) {
+    do {
+      send_start(protocol);
+    } while (get_btn_start() && get_mode() == IRSTART);
+    while (get_btn_start()) {
+    }
   }
+
+  if (get_btn_stop()) {
+    do {
+      send_stop(protocol);
+    } while (get_btn_stop() && get_mode() == IRSTART);
+    while (get_btn_stop()) {
+    }
+  }
+
   while (get_btn_stop()) {
     send_stop(protocol);
   }
-
 
   if (get_btn_mode()) {
     while (get_btn_mode()) {
