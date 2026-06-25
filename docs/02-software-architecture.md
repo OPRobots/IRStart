@@ -161,7 +161,7 @@ stateDiagram-v2
     STATE_START0 --> STATE_MID1 : long space
 ```
 
-> Basado en la implementación de [clearwater.com.au/code/rc5](https://clearwater.com.au/code/rc5).
+> Basado en la implementación de [p1r.se/startmodule](https://p1r.se/startmodule/) con la información de [SB-Projects RC5 Protocol](https://www.sbprojects.net/knowledge/ir/rc5.php).
 
 ### Control de señal
 
