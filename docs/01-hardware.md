@@ -9,7 +9,7 @@ como señal de arranque/parada para robots de competición.
 
 ## Mando (Remote)
 
-![Remote 3D Model](../images/IRStart_remote_3d_1.jpg)
+![Remote 3D Model](assets/imgs/IRStart_remote_3d_1.jpg)
 
 ### Microcontrolador
 
@@ -79,7 +79,7 @@ NEC y SIRC.
 
 ## Módulo (Module)
 
-![Module 3D Model](../images/IRStart_module_3d_1.jpg)
+![Module 3D Model](assets/imgs/IRStart_module_3d_1.jpg)
 
 ### Microcontrolador
 
